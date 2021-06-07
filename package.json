@@ -1,0 +1,23 @@
+{
+  "name": "endless-runner",
+  "version": "1.0.0",
+  "description": "3D Endless Runner made with Three.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruv-patel1/Endless-Runner.git"
+  },
+  "author": "Dhruv Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhruv-patel1/Endless-Runner/issues"
+  },
+  "homepage": "https://github.com/dhruv-patel1/Endless-Runner#readme",
+  "dependencies": {
+    "gh-pages": "^3.2.0"
+  }
+}
