@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Runner 3D</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <script>
+            function start(){
+                init();
+                document.getElementById("1").style.display = "none";
+            }
+
+            function alertFunc(){
+                alert("Controls: up = jump, right and left arrow keys = sideways movement. Objective is to collect coins while avoiding obstacles to get the highest possible score as the game goes to infinity.");
+            }
+
+        </script>
+
+        <div class="start-container" id="1">
+            <div class="text">World Runner 3D</div>
+            <div class="btn-container">
+                <button class="start" onClick="start()">Start Game</button>
+                <button class="instruction" onClick="alertFunc()">How to Play</button>
+            </div>
+        </div>
+        <div class="game-container" id="game">
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/three@0.115/build/three.js"></script>
+        <script src='https://cdn.rawgit.com/mrdoob/three.js/r88/build/three.min.js'></script>
+        <script src="https://rawcdn.githack.com/mrdoob/three.js/r88/examples/js/loaders/GLTFLoader.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/inflate.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
